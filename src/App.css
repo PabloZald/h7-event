@@ -1,0 +1,168 @@
+/* src/App.css */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el scroll horizontal accidental */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw; /* Asegura que ocupe el ancho de la ventana */
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Forzar en encabezados para mantener la jerarquía visual */
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Peso Bold para títulos */
+}
+
+p, a, ul {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+  color: #6c757d !important; /* Gris para inactivos */
+  position: relative;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px; /* Mejora la legibilidad en mayúsculas */
+}
+
+/* Estilo cuando el link está activo */
+.nav-link.active {
+  color: #000 !important; /* Negro para el activo */
+}
+
+/* La línea roja de 3px */
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;         /* Se posiciona al fondo del padding inferior */
+  left: 0;
+  width: 100%;       /* Ocupa todo el ancho del link (incluyendo el padding px-3) */
+  height: 3px;       /* Grosor solicitado */
+  background-color: #db0032ff; /* Color solicitado */
+  transition: width 0.3s ease;
+}
+
+/* Opcional: efecto hover sutil */
+.nav-link:hover {
+  color: #db0032ff !important;
+}
+
+/* Hero Section */
+.hero-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Imágenes de secciones */
+.section-img-full {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Footer Bicolor Line */
+.bicolor-container {
+  display: flex;
+  height: 3px;
+  width: 100%;
+  margin: 15px 0;
+}
+.line-blue { width: 75%; background-color: var(--primary-blue); }
+.line-red { width: 25%; background-color: var(--primary-red); }
+
+.bg-gray-rect {
+  background-color: var(--gray-footer);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section {
+  /* Asegura que el contenedor base tenga una altura fija */
+  height: 150px;
+}
+
+.hero-gradient-overlay {
+/* Explicación técnica:
+     0% - 40%: Dejamos la imagen clara para que se vea el Hangar.
+     40% - 100%: Empezamos a subir la opacidad del blanco.
+  */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,      /* Totalmente transparente arriba */
+    rgba(255, 255, 255, 0.5) 40%,    /* Un velo sutil en el medio */
+    rgba(255, 255, 255, 0.9) 85%,    /* Casi blanco cerca del final */
+    rgba(255, 255, 255, 1) 100%      /* Blanco puro al final (match con el fondo) */
+  );
+  
+  /* Tip de Senior: Esto ayuda a que los colores se mezclen matemáticamente mejor */
+}
+
+.hero-content-text {
+  position: relative;
+  z-index: 2; /* Por encima del degradado */
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Sombra suave para extra legibilidad */
+}
+
+.logo{
+  width: 250px;
+}
+
+.icon-md{
+  max-width: 64px;
+  max-height: 64px;
+}
+
+
+.location-item{
+  display:flex;
+  align-items:flex-start;
+  gap:20px;
+}
+
+.timeline{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.line{
+  width:1px;
+  height:100px;
+  border-left:1px dashed #777;
+}
+
+.arrow{
+  font-size:15px;
+  color:#777;
+  margin-top:-15px;
+}
+
+.content h3{
+  margin:0;
+  font-size:28px;
+  font-weight:700;
+  color:#555;
+}
+
+@media (min-width: 768px) {
+
+  .hero-section {
+    /* Asegura que el contenedor base tenga una altura fija */
+    height: 300px;
+  }
+  
+ }
