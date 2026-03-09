@@ -50,7 +50,7 @@ const Discover = () => {
 <div className="container py-3">
     <div className="row justify-content-center">
       <div className="col-12 col-md-9">
-        <h1 className="display-4 fw-bold mb-5 text-uppercase text-center">DISCOVER EL SALVADOR</h1>
+        <h1 className="display-4 fw-bold mb-5 text-uppercase text-center">DISCOVER <span className="text-nowrap">EL SALVADOR</span></h1>
         <h5 className="mb-5 text-dark">El Salvador offers a unique blend of culture, nature, and world-class hospitality. You may wish to explore some of the following highlights during your visit.</h5>
 
           {placesData.map((hotel, index) => (
