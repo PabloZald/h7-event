@@ -12,13 +12,20 @@ import QA from './pages/QA';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import BottomNav from './components/BottomNav';
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
-      <Navbar /> {/* Se muestra en todas las páginas */}
-      <main className="flex-grow-1">
-        <div className=""> {/* El contenedor padre */}
+      <ScrollToTop />
+      <Navbar /> {/* Navegación superior fija o estática */}
+      
+      {/* Agregamos content-wrapper aquí. 
+          d-flex y flex-column aseguran que el footer se vaya al fondo 
+      */}
+      <main className="flex-grow-1 content-wrapper d-flex flex-column">
+        <div className="flex-grow-1"> {/* Este div envuelve solo las rutas */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/event-info" element={<EventInfo />} />
@@ -29,8 +36,11 @@ function App() {
               <Route path="/travel" element={<Travel />} />
             </Routes>
         </div>
+        
+        <Footer /> {/* Al estar aquí, el padding del main lo protegerá */}
       </main>
-      <Footer /> {/* Se muestra en todas las páginas */}
+
+      <BottomNav /> {/* Este flota por encima de todo */}
     </Router>
   );
 }

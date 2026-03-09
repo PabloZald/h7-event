@@ -1,7 +1,7 @@
 import React from 'react';
 import logoFooter from '../assets/logos-h7-blanco.png';
 import ContactIcon from '../assets/contact-icon.png';
-
+import { NavLink } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -37,7 +37,9 @@ export const Footer = () => {
         style={{ backgroundColor: '#6d6e72ff', height: '100px' }}
       >
         <div className="d-flex gap-4">
-        <img src={logoFooter}  alt="Logo Footer" className="me-2 logo" />
+          <NavLink className="" to="/">
+            <img src={logoFooter}  alt="Logo Footer" className="me-2 logo" />
+            </NavLink>
         </div>
       </div>
     </footer>

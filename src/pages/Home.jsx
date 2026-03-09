@@ -1,6 +1,7 @@
 import React from 'react';
 import heroImage from '../assets/home-hero.jpg';
 import  Divider  from '../components/Divider';
+import  ImageCircleButton  from '../components/ImageCircleButton';
 
 const Home = () => {
   return (
@@ -37,6 +38,33 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+ {/* CIRCULOS
+      <div className="container py-2">
+        <div className="row justify-content-center mb-n5">
+          <div className="col-md-4 d-flex justify-content-center">
+          <ImageCircleButton label="Event Info" to="/event-info" rotation={80} />
+          </div>
+          <div className="col-md-4 d-flex justify-content-center mt-4 mt-sm-0">
+            <ImageCircleButton label="Travel" to="/travel" rotation={0} />
+          </div>
+          <div className="col-md-4 mt-4 mt-sm-0">
+            <ImageCircleButton label="Hotels" to="/recommended-hotels" rotation={170} />
+          </div>
+        </div>
+
+        <div className="row justify-content-center mt-4">
+          <div className="col-md-4 d-flex justify-content-center">
+            <ImageCircleButton label="Discover" to="/discover" rotation={20} />
+          </div>
+          <div className="col-md-4 d-flex justify-content-center mt-4 mt-sm-0">
+            <ImageCircleButton label="Q&A" to="/qa" rotation={150} />
+          </div>
+        </div>
+      </div>
+    */}
+
     </div>
     </div>
   );
