@@ -69,22 +69,22 @@ const AccessRequirements = () => {
                         <div className="row g-4">
 
                             {/* Versión Inglesa (Siguiendo el patrón) */}
-                            <div className="col-12 col-sm-6 d-flex align-items-center">
+                            <div className="col-12 col-md-4 d-flex align-items-center">
                             <img src={EnDocIcon}  alt="Contact icon" className="icon-md mb-3 me-3" />
                                 <div>
                                 <p className="mb-1 fw-bold">English version:</p>
-                                <a href="https://icktx7d.onk2.com/Runtime/Runtime/Form/Visitors+forms+-+ENG/" target="_blank" rel="noreferrer" className="btn btn-outline-primary btn-sm">
+                                <a href="https://icktx7d.onk2.com/Runtime/Runtime/Form/Visitors+forms+-+ENG/" target="_blank" rel="noreferrer" className="btn btn-outline-primary btn-sm btn-border-radius">
                                     Open Form
                                 </a>
                                 </div>
                             </div>
 
                             {/* Versión Española */}
-                            <div className="col-12 col-sm-6 d-flex align-items-center">
+                            <div className="col-12 col-md-4 d-flex align-items-center">
                                 <img src={EsDocIcon}  alt="Contact icon" className="icon-md mb-3 me-3" />
                                 <div>
                                 <p className="mb-1 fw-bold">Spanish version:</p>
-                                <a href="https://icktx7d.onk2.com/Runtime/Runtime/Form/Visitors+forms+-+SPA/" target="_blank" rel="noreferrer" className="btn btn-outline-primary btn-sm">
+                                <a href="https://icktx7d.onk2.com/Runtime/Runtime/Form/Visitors+forms+-+SPA/" target="_blank" rel="noreferrer" className="btn btn-outline-primary btn-sm btn-border-radius">
                                     Open Form
                                 </a>
                                 </div>

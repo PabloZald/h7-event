@@ -7,7 +7,7 @@ import OptionalFacilityIcon from '../assets/optional-facility-icon.png';
 import DressCodeIcon from '../assets/dress-code-icon.png';
 import DressCodeExample from '../assets/dress-code-example.png';
 import ReceptionIcon from '../assets/reception-icon.png';
-
+import { NavLink } from 'react-router-dom';
 // import TransportationIcon from '../assets/transportation-icon.png';
 // import WeatherIcon from '../assets/weather-icon.png';
 // import CashIcon from '../assets/cash-icon.png';
@@ -38,8 +38,6 @@ const EventInfo = () => {
                   <img src={HangarLines}  alt="Hangar Lines"   className="img-fluid"
                     />
                 </div>
-
-                
               </div>
             </div>
 
@@ -132,7 +130,9 @@ const EventInfo = () => {
                               A cocktail reception will follow the ceremony. We look forward to celebrating with you.
                             </p>
                         </div>
-
+                        <div className="col">
+                        <NavLink className="btn btn-primary btn-lg btn-border-radius px-5 mt-5" to="/access-requirements">See Access Requirements</NavLink>
+                        </div>
                     </div>
                 </div>  
               </div>

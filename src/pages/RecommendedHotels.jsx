@@ -69,7 +69,7 @@ const Hotels = () => {
                               href={hotel.link} 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              className="btn btn-sm btn-outline-primary"
+                              className="btn btn-sm btn-outline-primary btn-border-radius"
                           >
                               Visit Website
                           </a>

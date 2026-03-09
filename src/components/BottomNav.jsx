@@ -5,7 +5,7 @@ import '../App.css';
 const BottomNav = () => {
   const menuItems = [
     
-    { label: 'Info', to: '/event-info', icon: 'bi-info-circle' },
+    { label: 'Event', to: '/event-info', icon: 'bi-info-circle' },
     { label: 'Access', to: '/access-requirements', icon: 'bi-shield-check' },
     { label: 'Travel', to: '/travel', icon: 'bi-airplane' },
     { label: 'Hotels', to: '/recommended-hotels', icon: 'bi-building' },

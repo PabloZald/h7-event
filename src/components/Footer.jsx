@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer className="mt-5 w-100">
+    <footer className="mt-4 w-100">
       <div className="container text-center py-4">
         <img src={ContactIcon}  alt="Contact icon" className="icon-md mb-3" />
 

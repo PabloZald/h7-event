@@ -2,6 +2,7 @@ import React from 'react';
 import heroImage from '../assets/home-hero.jpg';
 import  Divider  from '../components/Divider';
 import  ImageCircleButton  from '../components/ImageCircleButton';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -21,20 +22,21 @@ const Home = () => {
       {/* Content Section */}
       <section className="py-3">
         <div className="row justify-content-center">
-          <div className="col-lg-10 text-center">
+          <div className="col-12 col-lg-6 text-center">
             <h1 className="display-4 fw-bold mb-3">WELCOME!</h1>
             <h3 className="text-secondary mb-2">
-              To the Heart of Aviation maintenance in the Americas.
+              To the Heart of Aviation <span className="text-nowrap">maintenance in the Americas.</span>
             </h3>
             
             <div className="mx-auto" style={{ maxWidth: '800px' }}>
               <p className="lead text-dark lh-base">
-                We look forward to welcoming you to El Salvador as we celebrate the 
-                inauguration of <strong>Hangar 7</strong> an important milestone in 
+                We look forward to welcoming you to El Salvador as <span className='fw-bold'>we celebrate the 
+                inauguration of Hangar 7</span> an important milestone in 
                 Aeroman and MROH’s continued growth and in the region’s aviation 
                 maintenance industry.
               </p>
             </div>
+            <NavLink className="btn btn-primary btn-lg btn-border-radius px-5 mt-4" to="/event-info">See Event Info</NavLink>
           </div>
         </div>
       </section>
