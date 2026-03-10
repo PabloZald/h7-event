@@ -17,10 +17,12 @@ export const Footer = () => {
 
         <p className="mb-1">
           More information, please contact: <br />
-          <strong>info@mroholdings.com</strong>
+          <a href={`mailto:mrohevents@mroholdings.com`} className="text-decoration-none text-dark d-block mb-4">
+            <strong>mrohevents@mroholdings.com</strong>
+          </a>
         </p>
 
-        <a 
+        {/* <a 
           href="https://wa.me/50378890790" 
           target="_blank" 
           rel="noopener noreferrer" 
@@ -28,7 +30,7 @@ export const Footer = () => {
         >
           <strong>WhatsApp</strong> <br />
           +503 7889 0790
-        </a>
+        </a> */}
       </div>
 
       {/* Rectángulo Gris con Logos */}
