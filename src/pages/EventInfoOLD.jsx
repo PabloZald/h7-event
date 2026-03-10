@@ -72,7 +72,7 @@ const EventInfo = () => {
                           </p>
                         </div>
 
-                        <div className="col-md-2  d-none d-md-block">
+                        <div className="col-md-2">
                           <div className="timeline">
                               <div className="line"></div>
                               <div className="arrow">⌄</div>
@@ -80,7 +80,7 @@ const EventInfo = () => {
                         </div>
 
                         {/* Segunda Columna: Clima / Información adicional (Estructura duplicada) */}
-                        {/* <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center border-start-md">
+                        <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center border-start-md">
                           <div className="mb-3">
                             <img src={OptionalFacilityIcon}  alt="NotAllowed icon" className="icon-md mb-3 mt-4 mt-sm-0" />
                           </div>
@@ -94,22 +94,9 @@ const EventInfo = () => {
                               <li> 3:30 PM</li>
                               <li>4:00 PM</li>
                             </ul>
-                        </div> */}
-                        
-                    
-        
-
-                        <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center border-start-md">
-                          <div className="mb-3">
-                            <img src={ReceptionIcon}  alt="Contact icon" className="icon-md mb-3 mt-4" />
-                          </div>
-                            <h5 className="fw-bold text-uppercase">Reception</h5>
-                            <p className="text-muted" style={{ maxWidth: '350px' }}>
-                              A cocktail reception will follow the ceremony. We look forward to celebrating with you.
-                            </p>
                         </div>
-
-                        <div className="col-12  d-flex flex-column align-items-center text-center ">
+                        
+                        <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center">
                           <div className="mb-3">
                           <img src={DressCodeIcon}  alt="Contact icon" className="icon-md mb-3 mt-4" />
                           </div>
@@ -127,9 +114,22 @@ const EventInfo = () => {
                             </div>
                         </div>
 
+                        <div className="col-md-2">
+                          <div className="timeline">
+                              <div className="line"></div>
+                              <div className="arrow">⌄</div>
+                          </div>
+                        </div>
 
-
-
+                        <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center">
+                          <div className="mb-3">
+                            <img src={ReceptionIcon}  alt="Contact icon" className="icon-md mb-3 mt-4" />
+                          </div>
+                            <h5 className="fw-bold text-uppercase">Reception</h5>
+                            <p className="text-muted" style={{ maxWidth: '350px' }}>
+                              A cocktail reception will follow the ceremony. We look forward to celebrating with you.
+                            </p>
+                        </div>
                         <div className="col">
                         <NavLink className="btn btn-primary btn-lg btn-border-radius px-5 mt-5" to="/access-requirements">See Access Requirements</NavLink>
                         </div>
