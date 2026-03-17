@@ -121,7 +121,7 @@ const EventInfo = () => {
                               With temperatures at the airport reaching approximately 35 °C, <strong>lightweight and breathable fabrics are recommended</strong>.
                           </p>
                           {/* Ilustración de líneas grises (Placeholder) */}
-                          <div className="mb-4 d-flex justify-content-center">
+                          <div className="mb-4 d-flex justify-content-center mt-4">
                               <img src={DressCodeExample}  alt="Dress Code Example Lines"   className="img-fluid"
                                 />
                             </div>
