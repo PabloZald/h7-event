@@ -78,8 +78,11 @@ const EventInfo = () => {
                             {/* Información de ubicación */}
                                 <h5 className="mb-2 fw-bolder">AEROMAN FACILITY</h5>
                             
+                            <p className="text-muted mb-0" style={{ maxWidth: '350px' }}>
+                              Monseñor Óscar Arnulfo Romero, International Airport, <strong>Access 6</strong>,
+                            </p>
                             <p className="text-muted" style={{ maxWidth: '350px' }}>
-                              Monseñor Óscar Arnulfo Romero, International Airport, Access 6, El Salvador.
+                              El Salvador.
                             </p>
                         </div>
                         
@@ -130,7 +133,7 @@ const EventInfo = () => {
                           </div>
                             <h5 className="fw-bold text-uppercase">Reception</h5>
                             <p className="text-muted" style={{ maxWidth: '350px' }}>
-                              A cocktail reception will follow the ceremony. We look forward to celebrating with you.
+                              A cocktail reception will follow the ceremony. <strong>We look forward to celebrating with you</strong>.
                             </p>
                         </div>
 
