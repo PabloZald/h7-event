@@ -3,10 +3,11 @@ import heroImage from '../assets/event-info-hero.png';
 import Divider  from '../components/Divider';
 import HangarLines from '../assets/hangar-lines.png';
 import CeremonyStartIcon from '../assets/ceremony-start-icon.png';
-import OptionalFacilityIcon from '../assets/optional-facility-icon.png';
+import LocationIcon from '../assets/location-icon.png';
 import DressCodeIcon from '../assets/dress-code-icon.png';
 import DressCodeExample from '../assets/dress-code-example.png';
 import ReceptionIcon from '../assets/reception-icon.png';
+import CalendarIcon from '../assets/calendar-icon.png';
 import { NavLink } from 'react-router-dom';
 // import TransportationIcon from '../assets/transportation-icon.png';
 // import WeatherIcon from '../assets/weather-icon.png';
@@ -46,23 +47,47 @@ const EventInfo = () => {
               <div className="row justify-content-center">
                 <div className="col-md-8">
                     <div className="row text-center">
-                        <div className="col-12">
-                        {/* Primera Columna: Zona Horaria */}
+                      <div className="col-12">
                           <h1 className="display-4  fw-bold mb-5 text-uppercase">EVENT INFO</h1>
-                          
-                            {/* Nombre de la facilidad */}
-                            <h3 className="mb-4 text-dark fw-bolder">Aeroman Facility</h3>
-
-                            {/* Información de ubicación */}
-                            <div className="mt-4 mb-5">
-                                <h5 className="mb-2 fw-normal">Monseñor Óscar Arnulfo Romero</h5>
-                                <h5 className="mb-2 fw-normal">International Airport,</h5>
-                                <h5 className="mb-0 fw-normal">Access 6, El Salvador.</h5>
-                            </div>
-
+                          </div>
+             
+                        <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center mb-4">
+                          <div className="mb-3">
+                          <img src={CalendarIcon}  alt="Calendar icon" className="icon-md mb-3 mt-4 mt-sm-0" />
+                          </div>
+                          <h5 className="fw-bold text-uppercase">Date</h5>
+                          <p className="text-muted" style={{ maxWidth: '350px' }}>
+                            <strong>Thursday</strong>, April 16, 2026.
+                          </p>
                         </div>
 
-                        <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center">
+                        <div className="col-md-2  d-none d-md-block">
+                          <div className="timeline">
+                              <div className="line"></div>
+                              <div className="arrow">⌄</div>
+                          </div>
+                        </div>
+
+                        <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center mb-4">
+                          {/* Primera Columna: Zona Horaria */}
+                          
+                           <div className="mb-3">
+                            <img src={LocationIcon}  alt="Ceremony icon" className="icon-md mb-3 mt-4 mt-sm-0" />
+                          </div>
+
+                            {/* Información de ubicación */}
+                                <h5 className="mb-2 fw-bolder">AEROMAN FACILITY</h5>
+                            
+                            <p className="text-muted" style={{ maxWidth: '350px' }}>
+                              Monseñor Óscar Arnulfo Romero, International Airport, Access 6, El Salvador.
+                            </p>
+                        </div>
+                        
+
+                        
+
+
+                        <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center mb-4">
                           <div className="mb-3">
                           <img src={CeremonyStartIcon}  alt="Ceremony icon" className="icon-md mb-3 mt-4 mt-sm-0" />
                           </div>
@@ -99,9 +124,9 @@ const EventInfo = () => {
                     
         
 
-                        <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center border-start-md">
+                        <div className="col-12 col-md-5 d-flex flex-column align-items-center text-center border-start-md mb-4">
                           <div className="mb-3">
-                            <img src={ReceptionIcon}  alt="Contact icon" className="icon-md mb-3 mt-4" />
+                            <img src={ReceptionIcon}  alt="Reception icon" className="icon-md mb-3" />
                           </div>
                             <h5 className="fw-bold text-uppercase">Reception</h5>
                             <p className="text-muted" style={{ maxWidth: '350px' }}>
